@@ -20,10 +20,11 @@ class ComicController extends Controller
         //         'nav'=>$nav
         //     ]);
 
-        $comics = Product::all();
+        $comics = Comic::all();
         // $nav = config('nav');
+        dd($comics);
 
         return view('comics', compact('comics'));
-        dd('comici');
+       
     }
 }
