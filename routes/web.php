@@ -12,29 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route della Home
-Route::get('/', function () {
-    $nav= config('nav');
-    $data = ['nav'=> $nav];
-    return view('home',$data);
-})->name('homepage');
+//Route della Home with controller HomeController
+Route::get('/','HomeController@index')->name('homepage');
+   
 
 // Route::get('/characters', function () {
 //     return view('characters');
 // })->name('characterspage');
 
-Route::get('/comics', function () {
-
-   //Passing 2 Parameters nav & comics both from two oop 
-    $comics = config('comics');
-    $nav = config('nav');
-
-    // Returning two array 
-    return view('comics',[
-        'comics' => $comics,
-        'nav'=>$nav
-    ]);
-})->name('comicspage');
+Route::get('/comics','ComicController@comics')->name('comicspage');
 
 // Route::get('/header', function(){
 //     $nav = config('nav');
