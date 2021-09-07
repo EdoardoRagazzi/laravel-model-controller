@@ -1,5 +1,164 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.home {
+  background-color: #60831a;
+  height: 400px;
+}
+
+.home img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.headerbox {
+  height: 100px;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo img {
+  height: 100px;
+  padding: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.main-menu {
+  line-height: 79px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+ul li:hover {
+  color: blue;
+  border-bottom: 5px solid blue;
+  transition: 0.5s ease;
+}
+
+ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+.jumbotron {
+  height: 300px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  background-color: #1C1C1C;
+  color: whitesmoke;
+  margin-top: -35px;
+}
+
+.container-fluid .slot-container,
+.container-xl .slot-container,
+.container-lg .slot-container,
+.container-md .slot-container,
+.container-sm .slot-container {
+  padding: 100px;
+}
+
+.container-fluid .slot-container .slot,
+.container-xl .slot-container .slot,
+.container-lg .slot-container .slot,
+.container-md .slot-container .slot,
+.container-sm .slot-container .slot {
+  text-align: center;
+}
+
+.container-fluid .slot-container .slot .img img,
+.container-xl .slot-container .slot .img img,
+.container-lg .slot-container .slot .img img,
+.container-md .slot-container .slot .img img,
+.container-sm .slot-container .slot .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin: auto;
+}
+
+.top-footer {
+  height: 300px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom-footer {
+  height: 100px;
+  background-color: #303030;
+}
+
+.link {
+  line-height: 100px;
+}
+
+.link h4 {
+  font-weight: 900;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #0c7cec;
+}
+
+.link img {
+  padding-left: 15px;
+}
+
+.link img:hover {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-self: center;
+}
+
+.btn button {
+  height: 50px;
+  width: 150px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  border: 2px solid #0c7cec;
+  background-color: #303030;
+}
+
+.btn button:hover {
+  background-color: #0c7cec;
+  cursor: pointer;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

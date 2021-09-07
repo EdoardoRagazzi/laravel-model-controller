@@ -1,0 +1,44 @@
+.top-footer{
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.bottom-footer{
+    height: 100px;
+    background-color: #303030;
+}
+.link {
+    line-height: 100px;
+    h4 {
+      font-weight: 900;
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      color: #0c7cec;
+    }
+    img {
+      padding-left: 15px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+}
+.btn {
+    display: flex;
+    align-self: center;
+    button {
+      height: 50px;
+      width: 150px;
+      font-size: 1em;
+      font-weight: 600;
+      color: white;
+      border: 2px solid #0c7cec;
+      background-color: #303030;
+      &:hover {
+        background-color: #0c7cec;
+        cursor: pointer;
+      }
+    }
+}
